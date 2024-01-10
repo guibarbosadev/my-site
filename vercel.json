@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    {
+      "source": "/cpf-generator",
+      "destination": "https://cpf-generator.vercel.app"
+    },
+    {
+      "source": "/cpf-generator/",
+      "destination": "https://cpf-generator.vercel.app"
+    },
+    {
+      "source": "/cpf-generator/:match",
+      "destination": "https://cpf-generator.vercel.app/:match*"
+    },
+    {
+      "source": "/streak-calendar",
+      "destination": "https://streak-calendar.vercel.app"
+    },
+    {
+      "source": "/streak-calendar/",
+      "destination": "https://streak-calendar.vercel.app"
+    },
+    {
+      "source": "/streak-calendar/:match",
+      "destination": "https://streak-calendar.vercel.app"
+    },
+    {
+      "source": "/streak-calendar-assets/:match*",
+      "destination": "https://streak-calendar.vercel.app/streak-calendar-assets/:match*"
+    }
+  ]
+}
