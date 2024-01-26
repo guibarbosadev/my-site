@@ -5,9 +5,11 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: rgba(var(--callout-rgb));
 }
 
+.section {
+  background-color: rgba(var(--callout-rgb));
+}
 
 .center {
   display: flex;

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Metadata } from "next";
+import { useMemo } from "react";
 
 type SocialLink = {
   href: string;
@@ -10,20 +11,6 @@ type SocialLink = {
 };
 
 const inter = Inter({ subsets: ["latin"] });
-const socials: SocialLink[] = [
-  {
-    href: "https://github.com/guibarbosadev",
-    name: "Github",
-  },
-  {
-    href: "https://linkedin.com/in/guibarbosadev",
-    name: "Linkedin",
-  },
-  {
-    href: "https://twitter.com/guibarbosadev",
-    name: "Twitter",
-  },
-];
 
 export const metada: Metadata = {
   title: "Guilherme Barbosa",
@@ -31,6 +18,21 @@ export const metada: Metadata = {
 };
 
 export default function Home() {
+  const socials: SocialLink[] = [
+    {
+      href: "https://github.com/guibarbosadev",
+      name: "Github",
+    },
+    {
+      href: "https://linkedin.com/in/guibarbosadev",
+      name: "Linkedin",
+    },
+    {
+      href: "https://twitter.com/guibarbosadev",
+      name: "Twitter",
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -64,6 +66,34 @@ export default function Home() {
             ))}
           </ul>
         </main>
+        <section className={styles.section}>
+          <a href="kyteapp.com" className={styles.tag}>
+            Kyte
+          </a>
+          <h2>June 2021 - Now</h2>
+          <div>Projects</div>
+          <a href="web.kyteapp.com">
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>[Web App] - Kyte POS</div>
+              <div className="cardDescription">
+                {`Main problem: many users of Kyte's POS app were not able to use
+                on computer, where they would be faster doing everything that
+                they already do on the app. Solution: Web version of the Kyte
+                POS app, where the business owners are able to basically do
+                everything that is already is possible on the app, like, for
+                example: - Register and manage orders/sales - Manage stock -
+                Manage products - Manage online catalog - Visualize business
+                statistics My participation: I was the main developer, which
+                made me responsable: - Decide which technologies/patterns would
+                be used in the project - Later, review the pull requests from
+                other devs - Participate on strategic decisions about how the
+                app should be/behave like Main technologies used: react,
+                react-native-web, react native, typescript, javacript, redux,
+                node.js`}
+              </div>
+            </div>
+          </a>
+        </section>
       </div>
     </>
   );
