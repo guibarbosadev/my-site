@@ -1,9 +1,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem 6rem 6rem;
   min-height: 100vh;
   background-color: rgba(var(--callout-rgb));
 }
@@ -14,7 +13,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .socials {
@@ -22,10 +21,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
-  margin-top: 60px;
 }
 
 
 .image {
   border-radius: 10%;
+  margin-top: 50px;
 }

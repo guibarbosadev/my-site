@@ -43,19 +43,6 @@ export default function Home() {
         <main
           className={`${styles.main} ${styles.section}  ${inter.className}`}
         >
-          <Image
-            alt="Guilherme Barbosa's picture"
-            src="/me.jpg"
-            width={460}
-            height={460}
-            className={styles.image}
-          />
-          <h1 className={styles.center}>Guilherme Barbosa</h1>
-          <p>
-            I love building things that make a big positive impact on society.
-          </p>
-          <p>Coding has been my profession since 2018.</p>
-
           <ul className={styles.socials}>
             {socials.map((social) => (
               <li key={social.href}>
@@ -63,6 +50,16 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          <Image
+            alt="Guilherme Barbosa's picture"
+            src="/me.jpg"
+            width={250}
+            height={250}
+            className={styles.image}
+          />
+          <h1 className={styles.center}>Guilherme Barbosa</h1>
+          <p>I love using code to solve real life problems.</p>
+          <p>Developing applications professionally since 2018.</p>
         </main>
       </div>
     </>
