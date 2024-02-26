@@ -1,0 +1,50 @@
+[
+  {
+    "title": "[Web app] Kyte Web",
+    "problem": " many users of Kyte's POS app were not able to use on computer, where they would be faster doing everything that they already do on the app.",
+    "solution": "Web version of the Kyte POS app, where the business owners are able to basically do everything that is already is possible on the app, like, for example: - Register and manage orders/sales - Manage stock - Manage products - Manage online catalog - Visualize business statistics",
+    "participation": " I was the main developer, which made me responsable: - Decide which technologies/patterns would be used in the project - Later, review the pull requests from other devs - Participate on strategic decisions about how the app should be/behave like",
+    "technologies": "react, react-native-web, react native, typescript, javacript, redux, node.js - 5000+ weekly active users - Increase of 37% invoicing increase, because of the subscriptions upgrades made exclusively to able use this web app - A well structured codebase, which allowed to continualy quickly develop new features - Happy users, that now were able to manage theirs business and quickly do needed actions.",
+    "screenshots": [
+      "/images/kyte-web/catalog.png",
+      "/images/kyte-web/analytics.png",
+      "/images/kyte-web/orders.png",
+      "/images/kyte-web/checkout.png",
+      "/images/kyte-web/products.png",
+      "/images/kyte-web/users.png",
+      "/images/kyte-web/customers.png"
+    ]
+  },
+  {
+    "title": "[Mobile app] Kyte POS",
+    "problem": " many users of Kyte's POS app were not able to use on computer, where they would be faster doing everything that they already do on the app.",
+    "solution": "Web version of the Kyte POS app, where the business owners are able to basically do everything that is already is possible on the app, like, for example: - Register and manage orders/sales - Manage stock - Manage products - Manage online catalog - Visualize business statistics",
+    "participation": " I was the main developer, which made me responsable: - Decide which technologies/patterns would be used in the project - Later, review the pull requests from other devs - Participate on strategic decisions about how the app should be/behave like",
+    "technologies": "react, react-native-web, react native, typescript, javacript, redux, node.js - 5000+ weekly active users - Increase of 37% invoicing increase, because of the subscriptions upgrades made exclusively to able use this web app - A well structured codebase, which allowed to continualy quickly develop new features - Happy users, that now were able to manage theirs business and quickly do needed actions.",
+    "screenshots": [
+      "/images/kyte-web/catalog.png",
+      "/images/kyte-web/analytics.png",
+      "/images/kyte-web/orders.png",
+      "/images/kyte-web/checkout.png",
+      "/images/kyte-web/products.png",
+      "/images/kyte-web/users.png",
+      "/images/kyte-web/customers.png"
+    ]
+  },
+  {
+    "title": "[Mobile app] Kyte Control",
+    "problem": " many users of Kyte's POS app were not able to use on computer, where they would be faster doing everything that they already do on the app.",
+    "solution": "Web version of the Kyte POS app, where the business owners are able to basically do everything that is already is possible on the app, like, for example: - Register and manage orders/sales - Manage stock - Manage products - Manage online catalog - Visualize business statistics",
+    "participation": " I was the main developer, which made me responsable: - Decide which technologies/patterns would be used in the project - Later, review the pull requests from other devs - Participate on strategic decisions about how the app should be/behave like",
+    "technologies": "react, react-native-web, react native, typescript, javacript, redux, node.js - 5000+ weekly active users - Increase of 37% invoicing increase, because of the subscriptions upgrades made exclusively to able use this web app - A well structured codebase, which allowed to continualy quickly develop new features - Happy users, that now were able to manage theirs business and quickly do needed actions.",
+    "screenshots": [
+      "/images/kyte-web/catalog.png",
+      "/images/kyte-web/analytics.png",
+      "/images/kyte-web/orders.png",
+      "/images/kyte-web/checkout.png",
+      "/images/kyte-web/products.png",
+      "/images/kyte-web/users.png",
+      "/images/kyte-web/customers.png"
+    ]
+  }
+]

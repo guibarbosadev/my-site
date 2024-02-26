@@ -3,8 +3,12 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 6rem 6rem;
-  min-height: 100vh;
-  background-color: rgba(var(--callout-rgb));
+}
+
+.section {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -27,4 +31,24 @@
 .image {
   border-radius: 10%;
   margin-top: 50px;
+}
+
+.card {
+  border: 1px solid #fff;
+  margin-top: 1rem;
+}
+
+.cardContent {
+  padding: 10px 10px 5px 10px;
+}
+
+.cardFooter {
+  display: flex;
+  padding: 20px 10px 10px 10px;
+  border-top: 1px solid white;
+}
+
+.cardFooter * {
+  margin-right: 10px;
+  overflow: scroll;
 }
