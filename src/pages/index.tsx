@@ -4,53 +4,42 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { GetStaticProps, Metadata } from "next";
 import { promises as fs } from "fs";
+import { MainProject, SocialLink, WorkExperience } from "@/types";
 
-type SocialLink = {
-  href: string;
-  name: string;
+type Props = {
+  projects: MainProject[];
+  works: WorkExperience[];
+  socials: SocialLink[];
 };
 
 const inter = Inter({ subsets: ["latin"] });
-const socials: SocialLink[] = [
-  {
-    href: "https://github.com/guibarbosadev",
-    name: "Github",
-  },
-  {
-    href: "https://linkedin.com/in/guibarbosadev",
-    name: "Linkedin",
-  },
-  {
-    href: "https://twitter.com/guibarbosadev",
-    name: "Twitter",
-  },
-];
-
 export const metada: Metadata = {
   title: "Guilherme Barbosa",
   description: `Hello, I am Guilherme Barbosa, a software developer, this is my personal website.`,
 };
 
-export interface MainProject {
-  title: string;
-  problem: string;
-  solution: string;
-  participation: string;
-  technologies: string;
-  screenshots: string[];
-}
-
 export const getStaticProps = async () => {
-  const file = await fs.readFile(
-    process.cwd() + "/public/main-projects.json",
-    "utf8"
-  );
-  const projects = JSON.parse(file);
+  async function getJSONObject<T>(fileName: string) {
+    const file = await fs.readFile(
+      `${process.cwd()}/public/${fileName}`,
+      "utf8"
+    );
+    const jsonObject: T = JSON.parse(file);
 
-  return { props: { projects } };
+    return jsonObject;
+  }
+
+  const [projects, socials, works] = await Promise.all([
+    getJSONObject<MainProject[]>("main-projects.json"),
+    getJSONObject<SocialLink[]>("socials.json"),
+    getJSONObject<WorkExperience[]>("works.json"),
+  ]);
+  const props: Props = { projects, socials, works };
+
+  return { props };
 };
 
-export default function Home(props: { projects: MainProject[] }) {
+export default function Home({ projects, works, socials }: Props) {
   return (
     <>
       <Head>
@@ -83,7 +72,7 @@ export default function Home(props: { projects: MainProject[] }) {
         </main>
         <section className={styles.section} title="Main projects">
           <h2>Main projects</h2>
-          {props.projects.map((project, index) => (
+          {projects.map((project, index) => (
             <div className={styles.card} key={index}>
               <div className={styles.cardContent}>
                 <h3>{project.title}</h3>
@@ -106,12 +95,40 @@ export default function Home(props: { projects: MainProject[] }) {
                     src={imageUrl}
                     width={150}
                     height={100}
+                    style={{ objectFit: "fill" }}
                     alt={`${project.title}'s ${index + 1} image`}
                   />
                 ))}
               </div>
             </div>
           ))}
+        </section>
+        <section className={styles.section} title="Work experience">
+          <h2>Work experience</h2>
+          <div className={styles.works}>
+            {works.map((work) => (
+              <div key={work.name} className={`${styles.work} ${styles.card}`}>
+                <div className={styles.cardContent}>
+                  <div className={styles.cardHeader}>
+                    <h3>{work.name}</h3>
+                    <span>
+                      {work.startYear}-{work.endYear ?? "now"}
+                    </span>
+                  </div>
+
+                  <p>{work.description}</p>
+
+                  <div className={styles.tags}>
+                    {work.technologies.map((technology) => (
+                      <div key={technology} className={styles.tag}>
+                        {technology}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
       </>
     </>

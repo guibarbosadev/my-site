@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Kyte",
+    "startYear": 2021,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4", "Tech 5"]
+  },
+  {
+    "name": "XDS",
+    "startYear": 2020,
+    "endYear": 2021,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4", "Tech 5"]
+  },
+  {
+    "name": "18digital",
+    "startYear": 2018,
+    "endYear": 2020,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4", "Tech 5"]
+  }
+]
