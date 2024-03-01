@@ -19,3 +19,15 @@ export type WorkExperience = {
   description: string;
   technologies: string[];
 };
+
+export interface SideProject {
+  name: string;
+  description: string;
+  technologies: string[];
+  links: SideProjectLink;
+}
+
+export interface SideProjectLink {
+  source: string;
+  preview: string;
+}

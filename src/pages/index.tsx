@@ -2,14 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { GetStaticProps, Metadata } from "next";
+import { Metadata } from "next";
 import { promises as fs } from "fs";
-import { MainProject, SocialLink, WorkExperience } from "@/types";
+import { MainProject, SideProject, SocialLink, WorkExperience } from "@/types";
 
 type Props = {
   projects: MainProject[];
   works: WorkExperience[];
   socials: SocialLink[];
+  sideProjects: SideProject[];
 };
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,17 +30,24 @@ export const getStaticProps = async () => {
     return jsonObject;
   }
 
-  const [projects, socials, works] = await Promise.all([
+  const [projects, socials, works, sideProjects] = await Promise.all([
     getJSONObject<MainProject[]>("main-projects.json"),
     getJSONObject<SocialLink[]>("socials.json"),
     getJSONObject<WorkExperience[]>("works.json"),
+    getJSONObject<SideProject[]>("side-projects.json"),
+    ,
   ]);
-  const props: Props = { projects, socials, works };
+  const props: Props = { projects, socials, works, sideProjects };
 
   return { props };
 };
 
-export default function Home({ projects, works, socials }: Props) {
+export default function Home({
+  projects,
+  works,
+  socials,
+  sideProjects,
+}: Props) {
   return (
     <>
       <Head>
@@ -125,6 +133,29 @@ export default function Home({ projects, works, socials }: Props) {
                       </div>
                     ))}
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section} title="Other projects">
+          <h2>Other projects</h2>
+          <div className={styles.works}>
+            {sideProjects.map((sideProject) => (
+              <div key={sideProject.name} className={styles.sideProjectCard}>
+                <h3>{sideProject.name}</h3>
+                <p>{sideProject.description}</p>
+                <div className={styles.tags}>
+                  {sideProject.technologies.map((technology) => (
+                    <div key={technology} className={styles.tag}>
+                      {technology}
+                    </div>
+                  ))}
+                </div>
+                <div className={styles.sideProjectCardLinks}>
+                  <a href={sideProject.links.source}>Source</a>
+                  <a href={sideProject.links.preview}>Visit</a>
                 </div>
               </div>
             ))}

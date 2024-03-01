@@ -1,0 +1,29 @@
+[
+  {
+    "name": "[Site] Cpf generator",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "links": {
+      "source": "https://github.com/guibarbosadev/cpf-generator",
+      "preview": "https://guibarbosa.dev/cpf-generator"
+    }
+  },
+  {
+    "name": "[Site] Casa Thomaz",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "links": {
+      "source": "https://github.com/guibarbosadev/casa-thomaz-site",
+      "preview": "https://casathomaz.com.br"
+    }
+  },
+  {
+    "name": "[Web app] Streak calendar",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "links": {
+      "source": "https://github.com/guibarbosadev/streak-calendar",
+      "preview": "https://guibarbosa.dev/streak-calendar"
+    }
+  }
+]
