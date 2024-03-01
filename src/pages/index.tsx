@@ -63,7 +63,9 @@ export default function Home({
           <ul className={styles.socials}>
             {socials.map((social) => (
               <li key={social.href}>
-                <a href={social.href}>{social.name}</a>
+                <a href={social.href} target="_blank">
+                  {social.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -154,8 +156,12 @@ export default function Home({
                   ))}
                 </div>
                 <div className={styles.sideProjectCardLinks}>
-                  <a href={sideProject.links.source}>Source</a>
-                  <a href={sideProject.links.preview}>Visit</a>
+                  <a href={sideProject.links.source} target="_blank">
+                    Source
+                  </a>
+                  <a href={sideProject.links.preview} target="_blank">
+                    Visit
+                  </a>
                 </div>
               </div>
             ))}
@@ -167,7 +173,6 @@ export default function Home({
           title="About myself"
         >
           <h2>About myself</h2>
-          <br></br>
           <div>
             <p>
               Meus interesses na area de tecnoogia, o que eu penso, o que gosto,
@@ -194,6 +199,13 @@ export default function Home({
             </p>
           </div>
         </section>
+
+        <footer className={styles.footer}>
+          Made with ❤️ by Guilherme Barbosa. MIT License.{" "}
+          <a href="https://github.com/guibarbosadev/my-site" target="_blank">
+            Source
+          </a>
+        </footer>
       </>
     </>
   );

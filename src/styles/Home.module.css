@@ -12,6 +12,13 @@
   margin-top: 2rem;
 }
 
+.section > *:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.section:last-of-type {
+  margin-bottom: 3rem;
+}
 
 .center {
   display: flex;
@@ -36,7 +43,6 @@
 
 .card {
   border: 1px solid #fff;
-  margin-top: 1rem;
 }
 
 .cardContent, .sideProjectCard {
@@ -95,4 +101,10 @@
   grid-template-columns: 1fr;
   row-gap: 10px;
   border: 1px solid white;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
 }
