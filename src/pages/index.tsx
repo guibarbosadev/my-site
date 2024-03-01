@@ -161,6 +161,39 @@ export default function Home({
             ))}
           </div>
         </section>
+
+        <section
+          className={`${styles.section} ${styles.sectionAboutMe}`}
+          title="About myself"
+        >
+          <h2>About myself</h2>
+          <br></br>
+          <div>
+            <p>
+              Meus interesses na area de tecnoogia, o que eu penso, o que gosto,
+              minha interpreção sobre desenvolvimento de software, Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Cursus eget nunc
+              scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui
+              nunc mattis enim ut tellus. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Cursus eget nunc scelerisque
+              viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis
+              enim ut tellus.
+            </p>
+            <br></br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
+              eget nunc scelerisque viverra mauris in aliquam sem fringilla.
+              Enim nec dui nunc mattis enim ut tellus.Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Cursus eget nunc
+              scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui
+              nunc mattis enim ut tellus.
+            </p>
+          </div>
+        </section>
       </>
     </>
   );
