@@ -4,6 +4,7 @@ export interface MainProject {
   solution: string;
   participation: string;
   technologies: string;
+  impact: string;
   screenshots: string[];
 }
 

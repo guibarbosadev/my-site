@@ -1,10 +1,21 @@
 [
   {
     "title": "[Web app] Kyte Web",
-    "problem": " many users of Kyte's POS app were not able to use on computer, where they would be faster doing everything that they already do on the app.",
-    "solution": "Web version of the Kyte POS app, where the business owners are able to basically do everything that is already is possible on the app, like, for example: - Register and manage orders/sales - Manage stock - Manage products - Manage online catalog - Visualize business statistics",
-    "participation": " I was the main developer, which made me responsable: - Decide which technologies/patterns would be used in the project - Later, review the pull requests from other devs - Participate on strategic decisions about how the app should be/behave like",
-    "technologies": "react, react-native-web, react native, typescript, javacript, redux, node.js - 5000+ weekly active users - Increase of 37% invoicing increase, because of the subscriptions upgrades made exclusively to able use this web app - A well structured codebase, which allowed to continualy quickly develop new features - Happy users, that now were able to manage theirs business and quickly do needed actions.",
+    "problem": "Kyte users were not able to use Kyte in the computer, a platform were a significant part of them were more familiar, and where they would also use on daily basis in order to run their businesses",
+    "solution": "A Web version of the Kyte app, where the business owners are able to do basically everything that were already possible in the app, as also some massive actions, like exporting all products",
+    "participation": "I was the main frontend developer, which made me responsable for the delivery of the first app verson, as also decide which technologies/patterns would be used in the project. Later, contribute to the launch of new pages, which were being delivered monthly ",
+    "impact": "6000+ weekly active users, and a big impact on the increase of 47% in revenue, since of subscriptions upgrades were made exclusively to able use this web app, as also a well structured codebase, which allowed to continualy quickly develop new features",
+    "technologies": [
+      "react",
+      "react-native-web",
+      "react native",
+      "scss",
+      "typescript",
+      "javacript",
+      "redux",
+      "node.js"
+    ],
+
     "screenshots": [
       "/images/kyte-web/catalog.png",
       "/images/kyte-web/analytics.png",
@@ -17,34 +28,44 @@
   },
   {
     "title": "[Mobile app] Kyte POS",
-    "problem": " many users of Kyte's POS app were not able to use on computer, where they would be faster doing everything that they already do on the app.",
-    "solution": "Web version of the Kyte POS app, where the business owners are able to basically do everything that is already is possible on the app, like, for example: - Register and manage orders/sales - Manage stock - Manage products - Manage online catalog - Visualize business statistics",
-    "participation": " I was the main developer, which made me responsable: - Decide which technologies/patterns would be used in the project - Later, review the pull requests from other devs - Participate on strategic decisions about how the app should be/behave like",
-    "technologies": "react, react-native-web, react native, typescript, javacript, redux, node.js - 5000+ weekly active users - Increase of 37% invoicing increase, because of the subscriptions upgrades made exclusively to able use this web app - A well structured codebase, which allowed to continualy quickly develop new features - Happy users, that now were able to manage theirs business and quickly do needed actions.",
+    "problem": "Kyte's users, which are small business owners, were constanly 'losing' and/or having unsyced orders between different devices",
+    "solution": "Make sure every order/sale is always up to date, and when not, provide visual feedback about the unsyced orders, as also ways to retry syncing orders/sales.",
+    "participation": "I was responsable for the whole archicteturing and implementation, which proved to be a real and fun challenge, since there were 30k+ active paying users, and a real complex and untyped codebase",
+    "impact": "25% decrease in churn rate, which was reportedly led by increase in users' trust within the app",
+    "technologies": ["react", "react native", "javascript"],
     "screenshots": [
-      "/images/kyte-web/catalog.png",
-      "/images/kyte-web/analytics.png",
-      "/images/kyte-web/orders.png",
-      "/images/kyte-web/checkout.png",
-      "/images/kyte-web/products.png",
-      "/images/kyte-web/users.png",
-      "/images/kyte-web/customers.png"
+      "/images/kyte-pos/analytics.png",
+      "/images/kyte-pos/customer.png",
+      "/images/kyte-pos/inventory.png",
+      "/images/kyte-pos/menu.png",
+      "/images/kyte-pos/pos-tablet.png",
+      "/images/kyte-pos/pos.png",
+      "/images/kyte-pos/tablet.png"
     ]
   },
   {
     "title": "[Mobile app] Kyte Control",
-    "problem": " many users of Kyte's POS app were not able to use on computer, where they would be faster doing everything that they already do on the app.",
-    "solution": "Web version of the Kyte POS app, where the business owners are able to basically do everything that is already is possible on the app, like, for example: - Register and manage orders/sales - Manage stock - Manage products - Manage online catalog - Visualize business statistics",
-    "participation": " I was the main developer, which made me responsable: - Decide which technologies/patterns would be used in the project - Later, review the pull requests from other devs - Participate on strategic decisions about how the app should be/behave like",
-    "technologies": "react, react-native-web, react native, typescript, javacript, redux, node.js - 5000+ weekly active users - Increase of 37% invoicing increase, because of the subscriptions upgrades made exclusively to able use this web app - A well structured codebase, which allowed to continualy quickly develop new features - Happy users, that now were able to manage theirs business and quickly do needed actions.",
+    "problem": "Kyte's users not being able to fully manage their businesses' finances inside Kyte's POS app",
+    "solution": "Develop a new application, where user can manage their expenses and be reminded of bills to pay",
+    "participation": "Responsable for delivering the first version of the app, which included the core features",
+    "impact": "Within the quick delivery of the app first version, the company were able to test if the allegedly problem was a real user problem",
+    "technologies": [
+      "react",
+      "react native",
+      "expo",
+      "typescript",
+      "javascript",
+      "redux",
+      "@reduxjs/tookit",
+      "node"
+    ],
     "screenshots": [
-      "/images/kyte-web/catalog.png",
-      "/images/kyte-web/analytics.png",
-      "/images/kyte-web/orders.png",
-      "/images/kyte-web/checkout.png",
-      "/images/kyte-web/products.png",
-      "/images/kyte-web/users.png",
-      "/images/kyte-web/customers.png"
+      "/images/kyte-control/category.png",
+      "/images/kyte-control/expense-clone.png",
+      "/images/kyte-control/expense-filter.png",
+      "/images/kyte-control/expense-paid.png",
+      "/images/kyte-control/finances.png",
+      "/images/kyte-control/payables.png"
     ]
   }
 ]

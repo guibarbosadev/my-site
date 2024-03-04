@@ -97,6 +97,18 @@ export default function Home({
                   <div>Solution: </div>
                   <p>{project.solution}</p>
                 </div>
+
+                <br></br>
+                <div>
+                  <div>Participation: </div>
+                  <p>{project.participation}</p>
+                </div>
+
+                <br></br>
+                <div>
+                  <div>Impact: </div>
+                  <p>{project.impact}</p>
+                </div>
               </div>
               <div className={styles.cardFooter}>
                 {project.screenshots.map((imageUrl, index) => (
