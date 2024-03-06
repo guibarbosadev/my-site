@@ -2,21 +2,40 @@
   {
     "name": "Kyte",
     "startYear": 2021,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4", "Tech 5"]
+    "description": "Place where i passed great years, many projects that I am proud of participating. Mostly working as senior front developer, taking many technical decisions, as well helping out younger developers",
+    "technologies": [
+      "React",
+      "React Native",
+      "Testing Library",
+      "WebDriver.io",
+      "Storybook",
+      "Node.js",
+      "Typescript",
+      "Javascript",
+      "Redux"
+    ]
   },
   {
     "name": "XDS",
     "startYear": 2020,
     "endYear": 2021,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4", "Tech 5"]
+    "description": "Second company I worked, started as mid level front end developer, solo responsable for the delivery of a loan platform. Later, developed a few things using Node.js on backend, as well some Flutter for some features on a mobile app",
+    "technologies": [
+      "React",
+      "Scss",
+      "Typescript",
+      "Javascript",
+      "Flutter",
+      "Dart",
+      "Node.js",
+      "Testing Library"
+    ]
   },
   {
     "name": "18digital",
     "startYear": 2018,
     "endYear": 2020,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4", "Tech 5"]
+    "description": "First company i worked, place where my foundation was built. It was tiny software house, I started working with Ionic, then React on web, React Native on mobile",
+    "technologies": ["Ionic", "React", "React Native", "Scss", "Node.js"]
   }
 ]
