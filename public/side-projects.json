@@ -1,8 +1,17 @@
 [
   {
+    "name": "[Web app] Streak calendar",
+    "description": "A solo project, a calendar that helps ourselfs tracking a personal challenge of doing something on a daily basis. Honestly, very fun project",
+    "technologies": ["React", "Node.js", "Express", "SCSS"],
+    "links": {
+      "source": "https://github.com/guibarbosadev/streak-calendar",
+      "preview": "https://guibarbosa.dev/streak-calendar"
+    }
+  },
+  {
     "name": "[Site] Cpf generator",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "description": "CPF = document number that identifies a person in Brazil. Developed during some lunch, long time ago. Only purpose was to help out on some project that I implementing some form that had a 'CPF' field",
+    "technologies": ["HTML", "CSS", "Javascript"],
     "links": {
       "source": "https://github.com/guibarbosadev/cpf-generator",
       "preview": "https://guibarbosa.dev/cpf-generator"
@@ -10,20 +19,11 @@
   },
   {
     "name": "[Site] Casa Thomaz",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "description": "My first site, made back in 2017. A very simple institutional website for a local company",
+    "technologies": ["HTML", "CSS", "Javascript"],
     "links": {
       "source": "https://github.com/guibarbosadev/casa-thomaz-site",
       "preview": "https://casathomaz.com.br"
-    }
-  },
-  {
-    "name": "[Web app] Streak calendar",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    "technologies": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
-    "links": {
-      "source": "https://github.com/guibarbosadev/streak-calendar",
-      "preview": "https://guibarbosa.dev/streak-calendar"
     }
   }
 ]
