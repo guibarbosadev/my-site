@@ -2,7 +2,7 @@
   {
     "name": "Kyte",
     "startYear": 2021,
-    "description": "Place where i passed great years, many projects that I am proud of participating. Mostly working as senior front developer, taking many technical decisions, as well helping out younger developers. Honestly I gained a lot of maturity and improved by a lot my soft skills",
+    "description": "Place where i passed great years, many projects that I am proud of participating. Mostly working as front developer, taking many technical decisions, as well helping out younger developers. Honestly I gained a lot of maturity and improved by a lot my soft skills",
     "technologies": [
       "React",
       "React Native",
@@ -19,7 +19,7 @@
     "name": "XDS",
     "startYear": 2020,
     "endYear": 2021,
-    "description": "Second company I worked, started as mid level front end developer, solo responsable for the delivery of a loan platform. Later, developed a few things using Node.js on backend, as well some Flutter for some features on a mobile app",
+    "description": "Second company I worked, started as level front end developer, solo responsable for the delivery of a loan platform. Later, developed a few things using Node.js on backend, as well some Flutter for some features on a mobile app",
     "technologies": [
       "React",
       "Scss",
