@@ -187,27 +187,21 @@ export default function Home({
           <h2>About myself</h2>
           <div>
             <p>
-              Meus interesses na area de tecnoogia, o que eu penso, o que gosto,
-              minha interpreção sobre desenvolvimento de software, Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Cursus eget nunc
-              scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui
-              nunc mattis enim ut tellus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Cursus eget nunc scelerisque
-              viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis
-              enim ut tellus.
+              {`
+              For me, the perfect analogy is that software development is basically a mix of different
+              "games", where the end result is solving a real life problem. Each language/stack/technology/context
+              has its own set of rules and common strategys(design patterns), everyone is trying to solve the game,
+              as we become more familiar with some specific game(language), our brain faster use some pattern to solve the
+              facing problem.
+              `}
             </p>
             <br></br>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
-              eget nunc scelerisque viverra mauris in aliquam sem fringilla.
-              Enim nec dui nunc mattis enim ut tellus.Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Cursus eget nunc
-              scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui
-              nunc mattis enim ut tellus.
+              I say that it is the perfect analogy because, just like any
+              complex game, there is always room for improvement. But for me,
+              even tough I love this games, their end goal is to help me to
+              solve real life problems, that is the purpose, otherwise, they
+              would be only games
             </p>
           </div>
         </section>
