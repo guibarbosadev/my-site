@@ -1,3 +1,5 @@
+import { FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
+
 export interface MainProject {
   title: string;
   problem: string;
@@ -10,7 +12,7 @@ export interface MainProject {
 
 export type SocialLink = {
   href: string;
-  name: string;
+  name: "Github" | "Linkedin" | "Twitter" | "Resume";
 };
 
 export type WorkExperience = {

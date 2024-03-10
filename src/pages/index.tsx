@@ -5,6 +5,17 @@ import styles from "@/styles/Home.module.css";
 import { Metadata } from "next";
 import { promises as fs } from "fs";
 import { MainProject, SideProject, SocialLink, WorkExperience } from "@/types";
+import {
+  IconDefinition,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  FontAwesomeIcon,
+  FontAwesomeIconProps,
+} from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
   projects: MainProject[];
@@ -18,6 +29,13 @@ export const metada: Metadata = {
   title: "Guilherme Barbosa",
   description: `Hello, I am Guilherme Barbosa, a software developer, this is my personal website.`,
 };
+const iconsMap: { [key in SocialLink["name"]]: FontAwesomeIconProps["icon"] } =
+  {
+    Github: faGithub,
+    Linkedin: faLinkedin,
+    Twitter: faTwitter,
+    Resume: faDownload,
+  };
 
 export const getStaticProps = async () => {
   async function getJSONObject<T>(fileName: string) {
@@ -65,6 +83,7 @@ export default function Home({
               <li key={social.href}>
                 <a href={social.href} target="_blank">
                   {social.name}
+                  <FontAwesomeIcon icon={iconsMap[social.name]} />
                 </a>
               </li>
             ))}

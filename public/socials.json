@@ -1,14 +1,22 @@
 [
   {
     "href": "https://github.com/guibarbosadev",
-    "name": "Github"
+    "name": "Github",
+    "icon": "github"
   },
   {
     "href": "https://linkedin.com/in/guibarbosadev",
-    "name": "Linkedin"
+    "name": "Linkedin",
+    "icon": "linkedin"
   },
   {
     "href": "https://twitter.com/guibarbosadev",
-    "name": "Twitter"
+    "name": "Twitter",
+    "icon": "twitter"
+  },
+  {
+    "href": "https://guibarbosadev/resume.pdf",
+    "name": "Resume",
+    "icon": "download"
   }
 ]
