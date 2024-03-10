@@ -12,6 +12,21 @@
   margin-top: 2rem;
 }
 
+@media (max-width: 600px) {
+  .main {
+    padding: 0rem 2rem 3rem;
+  }
+
+  .section {
+    padding: 0 2rem;
+  }
+
+
+  .section  > h2 {
+    text-align: center;
+  }
+}
+
 .section > *:nth-child(2) {
   margin-top: 1rem;
 }
