@@ -4,8 +4,14 @@
   border-radius: 8px;
 }
 
-.cardContent, .sideProjectCard {
-  padding: 10px 10px 5px 10px;
+.cardContent {
+  padding: 10px 10px 50px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardContentCollapsed {
+  max-height: 200px;
 }
 
 .cardFooter {
@@ -17,4 +23,15 @@
 .cardFooter * {
   margin-right: 10px;
   overflow: scroll;
+}
+
+.btnCollapse {
+  background: transparent;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: none;
+  color: rgb(0, 162, 255);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
