@@ -16,6 +16,7 @@ import {
   FontAwesomeIconProps,
 } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import CardProject from "@/components/card-project/CardProject";
 
 type Props = {
   projects: MainProject[];
@@ -101,47 +102,8 @@ export default function Home({
         </main>
         <section className={styles.section} title="Main projects">
           <h2>Main projects</h2>
-          {projects.map((project, index) => (
-            <div className={styles.card} key={index}>
-              <div className={styles.cardContent}>
-                <h3>{project.title}</h3>
-                <br></br>
-                <div>
-                  <div>Main problem: </div>
-                  <p>{project.problem}</p>
-                </div>
-
-                <br></br>
-                <div>
-                  <div>Solution: </div>
-                  <p>{project.solution}</p>
-                </div>
-
-                <br></br>
-                <div>
-                  <div>Participation: </div>
-                  <p>{project.participation}</p>
-                </div>
-
-                <br></br>
-                <div>
-                  <div>Impact: </div>
-                  <p>{project.impact}</p>
-                </div>
-              </div>
-              <div className={styles.cardFooter}>
-                {project.screenshots.map((imageUrl, index) => (
-                  <Image
-                    key={imageUrl}
-                    src={imageUrl}
-                    width={150}
-                    height={100}
-                    style={{ objectFit: "fill" }}
-                    alt={`${project.title}'s ${index + 1} image`}
-                  />
-                ))}
-              </div>
-            </div>
+          {projects.map((project) => (
+            <CardProject project={project} key={project.title} />
           ))}
         </section>
         <section className={styles.section} title="Work experience">

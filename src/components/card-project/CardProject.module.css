@@ -1,0 +1,20 @@
+.card {
+  box-shadow: #393939 2px 2px 15px;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+
+.cardContent, .sideProjectCard {
+  padding: 10px 10px 5px 10px;
+}
+
+.cardFooter {
+  display: flex;
+  padding: 20px 10px 10px 10px;
+  border-top: 1px solid white;
+}
+
+.cardFooter * {
+  margin-right: 10px;
+  overflow: scroll;
+}
