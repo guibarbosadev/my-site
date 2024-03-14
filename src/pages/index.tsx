@@ -82,9 +82,14 @@ export default function Home({
           <ul className={styles.socials}>
             {socials.map((social) => (
               <li key={social.href}>
-                <a href={social.href} target="_blank">
-                  {social.name}
-                  <FontAwesomeIcon icon={iconsMap[social.name]} />
+                <a href={social.href} target="_blank" className={styles.social}>
+                  <FontAwesomeIcon
+                    width={30}
+                    display="block"
+                    icon={iconsMap[social.name]}
+                    size="xs"
+                  />
+                  <span style={{ lineHeight: "2rem" }}>{social.name}</span>
                 </a>
               </li>
             ))}
