@@ -19,37 +19,32 @@ export default function CardProject({ project }: Props) {
             : classNames.cardContentExpanded
         }`}
       >
-        <h3>{project.title}</h3>
-        <br></br>
-        <div>
+        <div className={classNames.wrapper}>
+          <h3>{project.title}</h3>
+          <br></br>
+
           <div>Main problem: </div>
           <p>{project.problem}</p>
-        </div>
 
-        <br></br>
-        <div>
+          <br></br>
           <div>Solution: </div>
           <p>{project.solution}</p>
-        </div>
 
-        <br></br>
-        <div>
+          <br></br>
           <div>Participation: </div>
           <p>{project.participation}</p>
-        </div>
 
-        <br></br>
-        <div>
+          <br></br>
           <div>Impact: </div>
           <p>{project.impact}</p>
-        </div>
 
-        <button
-          className={classNames.btnCollapse}
-          onClick={() => setIsCollapsed((flag) => !flag)}
-        >
-          {isCollapsed ? "See more..." : "See less"}
-        </button>
+          <button
+            className={classNames.btnCollapse}
+            onClick={() => setIsCollapsed((flag) => !flag)}
+          >
+            {isCollapsed ? "See more..." : "See less"}
+          </button>
+        </div>
       </div>
       <div className={classNames.cardFooter}>
         {project.screenshots.map((imageUrl, index) => (

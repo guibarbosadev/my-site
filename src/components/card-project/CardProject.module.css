@@ -5,13 +5,15 @@
 }
 
 .cardContent {
-  padding: 10px 10px 50px 10px;
-  position: relative;
+  padding: 10px 10px 40px 10px;
   overflow: hidden;
+  position: relative;
 }
 
-.cardContentCollapsed {
+
+.cardContentCollapsed .wrapper {
   max-height: 200px;
+  overflow: hidden;
 }
 
 .cardFooter {
