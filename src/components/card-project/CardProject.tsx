@@ -1,5 +1,5 @@
 import { MainProject } from "@/types";
-import Image from "next/image";
+import ZoomableImage from "@/components/zoomable-image/ZoomableImage";
 import classNames from "./CardProject.module.css";
 import { useState } from "react";
 
@@ -48,7 +48,7 @@ export default function CardProject({ project }: Props) {
       </div>
       <div className={classNames.cardFooter}>
         {project.screenshots.map((imageUrl, index) => (
-          <Image
+          <ZoomableImage
             key={imageUrl}
             src={imageUrl}
             width={150}

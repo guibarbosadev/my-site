@@ -23,7 +23,7 @@
   overflow-x: scroll;
 }
 
-.cardFooter * {
+.cardFooter >  * {
   margin-right: 10px;
   flex-shrink: 0;
 }
