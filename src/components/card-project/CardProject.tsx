@@ -53,7 +53,7 @@ export default function CardProject({ project }: Props) {
             src={imageUrl}
             width={150}
             height={100}
-            style={{ objectFit: "fill" }}
+            style={{ objectFit: "cover" }}
             alt={`${project.title}'s ${index + 1} image`}
           />
         ))}

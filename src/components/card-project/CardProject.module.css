@@ -20,11 +20,12 @@
   display: flex;
   padding: 20px 10px 10px 10px;
   border-top: 1px solid white;
+  overflow-x: scroll;
 }
 
 .cardFooter * {
   margin-right: 10px;
-  overflow: scroll;
+  flex-shrink: 0;
 }
 
 .btnCollapse {
