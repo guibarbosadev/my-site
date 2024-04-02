@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Metadata } from "next";
+import { GetStaticPaths, Metadata } from "next";
 import { promises as fs } from "fs";
 import { MainProject, SideProject, SocialLink, WorkExperience } from "@/types";
 import {
@@ -17,6 +17,8 @@ import {
 } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import CardProject from "@/components/card-project/CardProject";
+import { useTranslation, getI18n } from "react-i18next";
+import { useRouter } from "next/router";
 
 type Props = {
   projects: MainProject[];
@@ -38,13 +40,28 @@ const iconsMap: { [key in SocialLink["name"]]: FontAwesomeIconProps["icon"] } =
     Resume: faDownload,
   };
 
-export const getStaticProps = async () => {
+export const getStaticPaths = (async () => {
+  return {
+    paths: [{ params: { locale: "en" } }, { params: { locale: "pt-BR" } }],
+    fallback: true,
+  };
+}) satisfies GetStaticPaths;
+
+export const getStaticProps = async ({
+  locale,
+}: {
+  locale: "en" | "pt-BR";
+}) => {
   async function getJSONObject<T>(fileName: string) {
+    // const { language } = getI18n() ?? {};
+
     const file = await fs.readFile(
-      `${process.cwd()}/public/${fileName}`,
+      `${process.cwd()}/public/i18n/${locale ?? "en"}/${fileName}`,
       "utf8"
     );
     const jsonObject: T = JSON.parse(file);
+
+    console.log({ locale });
 
     return jsonObject;
   }
@@ -54,7 +71,6 @@ export const getStaticProps = async () => {
     getJSONObject<SocialLink[]>("socials.json"),
     getJSONObject<WorkExperience[]>("works.json"),
     getJSONObject<SideProject[]>("side-projects.json"),
-    ,
   ]);
   const props: Props = { projects, socials, works, sideProjects };
 
@@ -67,6 +83,9 @@ export default function Home({
   socials,
   sideProjects,
 }: Props) {
+  const { t } = useTranslation();
+  const bla = useRouter();
+
   return (
     <>
       <Head>
@@ -102,8 +121,8 @@ export default function Home({
             className={styles.image}
           />
           <h1 className={styles.center}>Guilherme Barbosa</h1>
-          <p>I love using code to solve real life problems.</p>
-          <p>Developing applications professionally since 2018.</p>
+          <p>{t("me.description1")}</p>
+          <p>{t("me.description2")}</p>
         </main>
         <section className={styles.section} title="Main projects">
           <h2>Main projects</h2>
