@@ -70,6 +70,10 @@
   border-radius: 8px;
 }
 
+.card, .sideProjectCard, .work {
+  background-color: #0b0b0b;
+}
+
 .cardContent {
   padding: 10px 10px 0px 10px;
 }

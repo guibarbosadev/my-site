@@ -88,12 +88,9 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background: rgb(19, 18, 22); */
+  background-color: black;
+  /* background-color: #3d3d3d; */
 }
 
 a {
@@ -105,9 +102,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
-
-
-body {
-  background-color: rgba(var(--callout-rgb));
 }
