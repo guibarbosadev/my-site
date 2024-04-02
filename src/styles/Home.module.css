@@ -70,7 +70,7 @@
   border-radius: 8px;
 }
 
-.cardContent, .sideProjectCard {
+.cardContent {
   padding: 10px 10px 0px 10px;
 }
 
@@ -119,10 +119,36 @@
 
 .sideProjectCard {
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
-  grid-template-columns: 1fr;
-  row-gap: 10px;
   border: 1px solid white;
+  grid-template-rows: 1fr auto;
+}
+
+.sideProjectCardContent {
+  padding: 10px 10px 0px 10px;
+  display: grid;
+  row-gap: 10px;
+  grid-template-rows: auto 1fr auto;
+}
+
+.sideProjectCardLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+.sideProjectCardLinks > * {
+  padding: 15px 0;
+}
+
+.sideProjectCardLinks > *:first-child {
+  border-right: 0.5px solid white;
+  background-color: rgb(93, 93, 93);
+}
+
+.sideProjectCardLinks > *:nth-child(2) {
+  border-left: 0.5px solid white;
 }
 
 .footer {

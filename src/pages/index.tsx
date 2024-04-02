@@ -144,14 +144,16 @@ export default function Home({
           <div className={styles.works}>
             {sideProjects.map((sideProject) => (
               <div key={sideProject.name} className={styles.sideProjectCard}>
-                <h3>{sideProject.name}</h3>
-                <p>{sideProject.description}</p>
-                <div className={styles.tags}>
-                  {sideProject.technologies.map((technology) => (
-                    <div key={technology} className={styles.tag}>
-                      {technology}
-                    </div>
-                  ))}
+                <div className={styles.sideProjectCardContent}>
+                  <h3>{sideProject.name}</h3>
+                  <p>{sideProject.description}</p>
+                  <div className={styles.tags}>
+                    {sideProject.technologies.map((technology) => (
+                      <div key={technology} className={styles.tag}>
+                        {technology}
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <div className={styles.sideProjectCardLinks}>
                   <a href={sideProject.links.source} target="_blank">
